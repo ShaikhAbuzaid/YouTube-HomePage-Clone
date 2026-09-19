@@ -5,7 +5,7 @@
         
         <style>
             .search-bar {
-
+                    display: block;
             }
             .thumbnail {
                 width: 300px;
@@ -16,6 +16,12 @@
                 width: 300px;
                 display: block;
             }
+            .v-preview {
+                width: 300px;
+                display: inline-block;
+                vertical-align: top;
+                margin-right: 15px;
+            }
 
         </style>
     
@@ -23,20 +29,36 @@
     </head>
     <body>
         <input class="search-bar" type="text" placeholder="Search...">
+    <div class="v-preview">
         <img class="thumbnail" src="thumbnails/thumbnail-1.jpg">
 
+        <p class="video-title">
+        HTML & CSS Full Course - Beginner to Pro
+        </p>
+
+        <p class="video-channel">
+         SuperSimpleDev
+        </p>
+
+        <p class="video-views">
+        19m views • 4 years ago
+        </p>
+    </div>
+
+        <div class="v-preview">
+        <img class="thumbnail" src="thumbnails/thumbnail-2.jpg">
 
         <p class="video-title">
-HTML & CSS Full Course - Beginner to Pro
-</p>
+        FREE Coding Bootcamp -Build 4 Full Stack Projects in 23 Hours
+        </p>
 
-<p class="video-channel">
-    SuperSimpleDev
-</p>
+        <p class="video-channel">
+         Codesistency
+        </p>
 
-<p class="video-views">
-19m views • 4 years ago
-</p>
-
+        <p class="video-views">
+        566k views • 1 year ago
+        </p>
+    </div>
     </body>
 </html>
