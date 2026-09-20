@@ -2,8 +2,14 @@
 <html>
     <head>
         <title>Y-Tube HomePage Clone</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         
         <style>
+            p {
+                font-family: Roboto, sans-serif;
+            }
             .search-bar {
                     display: block;
             }
@@ -13,14 +19,39 @@
 
             }
             .video-title {
-                width: 300px;
-                display: block;
+                margin-top: 0px;
+                font-weight: 500;
+                font-size: 14px;
+                width: 240px;
             }
             .v-preview {
                 width: 300px;
                 display: inline-block;
                 vertical-align: top;
                 margin-right: 15px;
+            }
+            .profile-align {
+                display: inline-block;
+                width: 50px;
+                vertical-align: top;
+            }
+            .content-align {
+                display: inline-block;
+                width: 200px;
+            }
+            .profile-picture {
+                width: 45px;
+                /*border-radius: 50%;*/
+            }
+            .thumbnail-row {
+                margin-bottom: 12px;
+            }
+            .video-channel {
+                font-size: 13px;
+            }
+            .video-views {
+                font-size: 13px;
+                color: #000000;
             }
 
         </style>
@@ -29,32 +60,42 @@
     </head>
     <body>
         <input class="search-bar" type="text" placeholder="Search...">
+    
     <div class="v-preview">
-        <img class="thumbnail" src="thumbnails/thumbnail-1.jpg">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-1.jpg">
+        </div>
+            <div>
+                <div class="profile-align">
+                    <img class="profile-picture" src="profile-pictures/pp-1.jpg">
+                </div>
 
-        <p class="video-title">
-        HTML & CSS Full Course - Beginner to Pro
-        </p>
+                <div class="content-align">     
+                    <p class="video-title">
+                        HTML & CSS Full Course - Beginner to Pro
+                    </p>
 
-        <p class="video-channel">
-         SuperSimpleDev
-        </p>
+                    <p class="video-channel">
+                        SuperSimpleDev
+                    </p>
 
-        <p class="video-views">
-        19m views • 4 years ago
-        </p>
+                    <p class="video-views">
+                        19m views • 4 years ago
+                    </p>
+                </div>  
+            </div>    
     </div>
 
-        <div class="v-preview">
-        <img class="thumbnail" src="thumbnails/thumbnail-2.jpg">
+    <div class="v-preview">
+            <img class="thumbnail" src="thumbnails/thumbnail-2.jpg">
 
-        <p class="video-title">
-        FREE Coding Bootcamp -Build 4 Full Stack Projects in 23 Hours
-        </p>
+            <p class="video-title">
+            FREE Coding Bootcamp -Build 4 Full Stack Projects in 23 Hours
+            </p>
 
-        <p class="video-channel">
+            <p class="video-channel">
          Codesistency
-        </p>
+            </p>
 
         <p class="video-views">
         566k views • 1 year ago
